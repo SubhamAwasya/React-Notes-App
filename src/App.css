@@ -1,0 +1,8 @@
+.grid-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 280px));
+  margin: 0 20px;
+}

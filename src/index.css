@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.jodit_theme_custom {
+  --jd-color-background-default: #ffffff;
+  --jd-color-border: #044406;
+  --jd-color-panel: #9bffe1;
+  --jd-color-icon: #044406;
+}
