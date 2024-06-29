@@ -21,15 +21,26 @@ function ShowNote() {
   }
 
   return (
-    <>
-      <div>ShowNote</div>
-      <Link to={`/create_edit_note/${id}`}>Edit</Link>
-      <Link to={`/`} onClick={OnDelete}>
-        Delete
-      </Link>
-      <Link to={"/"}>Home</Link>
-      {displayData && <div dangerouslySetInnerHTML={{ __html: displayData }} />}
-    </>
+    <div className="show-note-container">
+      <h1 className="title">NOTE</h1>
+      <div className="show-note-btn-container">
+        <Link to={"/"}>
+          <button class="button-13">Home</button>
+        </Link>
+        <Link to={`/create_edit_note/${id}`}>
+          <button class="button-13">Edit</button>
+        </Link>
+        <Link to={`/`} onClick={OnDelete}>
+          <button class="button-13">Delete</button>
+        </Link>
+      </div>
+      {displayData && (
+        <div
+          className="note-container"
+          dangerouslySetInnerHTML={{ __html: displayData }}
+        />
+      )}
+    </div>
   );
 }
 

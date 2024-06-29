@@ -69,22 +69,19 @@ export default function TextEditor({ id }) {
       {id ? (
         <>
           <Link to={"/show_note/" + id} onClick={OnSaveNote}>
-            Save
-          </Link>
-          <Link to={"/"} onClick={OnCancle}>
-            Cancle
+            <button class="button-13">Save</button>
           </Link>
         </>
       ) : (
         <>
           <Link to={"/"} onClick={OnCreateNote}>
-            Create
-          </Link>
-          <Link to={"/"} onClick={OnCancle}>
-            Cancle
+            <button class="button-13">Create</button>
           </Link>
         </>
       )}
+      <Link to={"/"} onClick={OnCancle}>
+        <button class="button-13">Cancle</button>
+      </Link>
     </>
   );
 

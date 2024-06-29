@@ -1,3 +1,75 @@
+.title {
+  text-align: center;
+  font-weight: 900;
+  background-color: black;
+  color: white;
+}
+
+/* Button ------------------------- */
+.create-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10px auto;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: black;
+}
+
+/* plus sign */
+.sign {
+  width: 100%;
+  font-size: 2em;
+  color: white;
+  transition-duration: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* text */
+.text {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 500;
+  transition-duration: 0.3s;
+}
+/* hover effect on button width */
+.create-btn:hover {
+  width: 125px;
+  border-radius: 0px;
+  transition-duration: 0.3s;
+}
+
+.create-btn:hover .sign {
+  width: 30%;
+  transition-duration: 0.3s;
+  padding-left: 20px;
+}
+/* hover effect button's text */
+.create-btn:hover .text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: 0.3s;
+  padding-right: 20px;
+}
+/* button click effect*/
+.create-btn:active {
+  transform: translate(2px, 2px);
+}
+/* --------------------------------- */
+
 .grid-container {
   display: grid;
   justify-content: center;

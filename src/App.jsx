@@ -10,8 +10,12 @@ function App() {
 
   return (
     <>
-      <h1>NOTES</h1>
-      <Link to={`/create_edit_note`}>Create</Link>
+      <h1 className="title">NOTES</h1>
+      <Link class="create-btn" to={`/create_edit_note`}>
+        <div class="sign">+</div>
+        <div class="text">Create</div>
+      </Link>
+
       <div className="grid-container">
         {notesIDs.map((element) => (
           <NoteCard
