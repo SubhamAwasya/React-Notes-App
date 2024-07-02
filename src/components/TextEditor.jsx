@@ -17,10 +17,10 @@ export default function TextEditor({ id }) {
   const config = useMemo(
     () => ({
       readonly: false,
-      placeholder: "",
+      placeholder: "Take a note...",
       defaultActionOnPaste: "insert_as_html",
       defaultLineHeight: 1.5,
-      height: 400,
+      height: "calc(100vh - 70px)",
       enter: "div",
       statusbar: true,
       toolbarAdaptive: true,
@@ -54,7 +54,7 @@ export default function TextEditor({ id }) {
   }
 
   return (
-    <>
+    <div className="text-editor-container">
       <JoditEditor
         id="editor"
         ref={editor}
@@ -66,47 +66,24 @@ export default function TextEditor({ id }) {
         onChange={(C) => setContent(C)}
       />
 
-      {id ? (
-        <>
-          <Link to={"/show_note/" + id} onClick={OnSaveNote}>
-            <button class="button-13">Save</button>
-          </Link>
-        </>
-      ) : (
-        <>
-          <Link to={"/"} onClick={OnCreateNote}>
-            <button class="button-13">Create</button>
-          </Link>
-        </>
-      )}
-      <Link to={"/"} onClick={OnCancle}>
-        <button class="button-13">Cancle</button>
-      </Link>
-    </>
+      <div className="text-editor-btn-container">
+        {id ? (
+          <>
+            <Link to={"/show_note/" + id} onClick={OnSaveNote}>
+              <button className="button-13">Save</button>
+            </Link>
+          </>
+        ) : (
+          <>
+            <Link to={"/"} onClick={OnCreateNote}>
+              <button className="button-13">Create</button>
+            </Link>
+          </>
+        )}
+        <Link to={"/"} onClick={OnCancle}>
+          <button className="button-13">Cancle</button>
+        </Link>
+      </div>
+    </div>
   );
-
-  // return (
-  //   <div id="quill-container" style={{ width: "100%", height: 300 }}>
-  //     <div ref={quillRef} />
-  //     {id ? (
-  //       <>
-  //         <Link to={"/show_note/" + id} onClick={OnSaveNote}>
-  //           Save
-  //         </Link>
-  //         <Link to={"/"} onClick={OnCancle}>
-  //           Cancle
-  //         </Link>
-  //       </>
-  //     ) : (
-  //       <>
-  //         <Link to={"/"} onClick={OnCreateNote}>
-  //           Create
-  //         </Link>
-  //         <Link to={"/"} onClick={OnCancle}>
-  //           Cancle
-  //         </Link>
-  //       </>
-  //     )}
-  //   </div>
-  // );
 }

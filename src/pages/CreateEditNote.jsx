@@ -8,6 +8,10 @@ function CreateEditNote() {
   const { id } = useParams();
   return (
     <div className="create_edit_note-container">
+      <h1 className="title">
+        {id ? "EDIT " : "CREATE "}
+        NOTE
+      </h1>
       <TextEditor id={id}></TextEditor>
     </div>
   );

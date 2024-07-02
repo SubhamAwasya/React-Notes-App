@@ -1,4 +1,12 @@
-[class="jodit-status-bar-link"] {
+[className="jodit-status-bar-link"] {
   display: none;
   background-color: aqua !important;
+}
+
+.text-editor-container {
+  margin: 10px;
+}
+
+.text-editor-btn-container {
+  margin-top: 10px;
 }

@@ -22,16 +22,16 @@ function ShowNote() {
 
   return (
     <div className="show-note-container">
-      <h1 className="title">NOTE</h1>
+      <h1 className="title">VIEW NOTE</h1>
       <div className="show-note-btn-container">
         <Link to={"/"}>
-          <button class="button-13">Home</button>
+          <button className="button-13">Home</button>
         </Link>
         <Link to={`/create_edit_note/${id}`}>
-          <button class="button-13">Edit</button>
+          <button className="button-13">Edit</button>
         </Link>
         <Link to={`/`} onClick={OnDelete}>
-          <button class="button-13">Delete</button>
+          <button className="button-13">Delete</button>
         </Link>
       </div>
       {displayData && (

@@ -11,9 +11,9 @@ function App() {
   return (
     <>
       <h1 className="title">NOTES</h1>
-      <Link class="create-btn" to={`/create_edit_note`}>
-        <div class="sign">+</div>
-        <div class="text">Create</div>
+      <Link className="create-btn" to={`/create_edit_note`}>
+        <div className="sign">+</div>
+        <div className="text">Create</div>
       </Link>
 
       <div className="grid-container">
@@ -25,7 +25,12 @@ function App() {
           />
         ))}
       </div>
-      {notesIDs.length === 0 && <h1>You don't have any notes</h1>}
+      {notesIDs.length === 0 && (
+        <h1 className="no-notes-msg">
+          You don't have any notes. To create one click on the{" "}
+          <strong>+</strong> button
+        </h1>
+      )}
     </>
   );
 }
