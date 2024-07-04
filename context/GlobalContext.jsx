@@ -25,7 +25,6 @@ function GlobalContext({ children }) {
         return false;
       }
     });
-    console.log(newIndex);
     setNotesIDs(newIndex);
     localStorage.setItem("notesIDs", JSON.stringify(newIndex));
   }

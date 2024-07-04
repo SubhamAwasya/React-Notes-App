@@ -65,7 +65,6 @@ export default function TextEditor({ id }) {
         }}
         onChange={(C) => setContent(C)}
       />
-
       <div className="text-editor-btn-container">
         {id ? (
           <>

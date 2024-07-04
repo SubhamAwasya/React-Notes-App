@@ -1,4 +1,3 @@
-import React from "react";
 import "./css/NotFound404.css";
 import { Link } from "react-router-dom";
 

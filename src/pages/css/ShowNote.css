@@ -1,18 +1,19 @@
 .show-note-container {
-  background: #ffffff;
   min-height: 100vh;
 }
 
 .show-note-btn-container {
-  margin-top: 10px;
-  margin-left: 5px;
+  position: fixed;
+  margin: 10px 5px;
+  bottom: 0;
+  left: 0;
 }
 
 .note-container {
   border-radius: 8px;
   border: 1px solid #aaa;
   background-color: rgb(255, 255, 255);
-  min-height: calc(100vh - 120px);
+  min-height: calc(100vh - 70px);
   margin: 10px;
   padding: 10px;
 }

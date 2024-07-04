@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(255, 255, 255);
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -13,20 +17,21 @@ a {
 /* Button of */
 /* CSS */
 .button-13 {
-  background-color: #fff;
+  background-color: #0f1111;
   border: 1px solid #d5d9d9;
   border-radius: 8px;
   box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
   box-sizing: border-box;
-  color: #0f1111;
+  color: #fff;
   cursor: pointer;
   display: inline-block;
   font-family: sans-serif;
   font-size: 13px;
   font-weight: 600;
   line-height: 29px;
-  padding: 5px 10px;
+  padding: 5px 5px;
   margin: 0 5px;
+  z-index: 1000;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -34,11 +39,11 @@ a {
   -webkit-user-select: none;
   touch-action: manipulation;
   vertical-align: middle;
-  width: 100px;
+  width: 80px;
 }
 
 .button-13:hover {
-  background-color: #e0e0e0;
+  background-color: #595959;
 }
 
 .button-13:focus {

@@ -12,24 +12,24 @@ import NotFound404 from "./pages/NotFound404.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <App />
   },
   {
     path: "/show_note/:id",
-    element: <ShowNote />,
+    element: <ShowNote />
   },
   {
     path: "/create_edit_note",
-    element: <CreateEditNote />,
+    element: <CreateEditNote />
   },
   {
     path: "/create_edit_note/:id",
-    element: <CreateEditNote />,
+    element: <CreateEditNote />
   },
   {
     path: "/*",
-    element: <NotFound404 />,
-  },
+    element: <NotFound404 />
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
