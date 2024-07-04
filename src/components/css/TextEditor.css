@@ -3,10 +3,6 @@
   background-color: aqua !important;
 }
 
-[class="jodit-wysiwyg"] {
-  z-index: -1;
-}
-
 .text-editor-container {
   margin: 10px;
 }
